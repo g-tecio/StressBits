@@ -328,6 +328,7 @@
 		216083592136E55E00834890 /* Comp_1_00148.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 216082C12136E55E00834890 /* Comp_1_00148.jpg */; };
 		2160835A2136E55E00834890 /* Comp_1_00149.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 216082C22136E55E00834890 /* Comp_1_00149.jpg */; };
 		2160835E2137093400834890 /* lose.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2160835D2137093400834890 /* lose.mp3 */; };
+		2175E046214173D7008C2F64 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2175E045214173D7008C2F64 /* GoogleService-Info.plist */; };
 		BC18F87FAAD8B7755C88625B /* Pods_StressBits.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E145D34D639CC7F8B1C4B36 /* Pods_StressBits.framework */; };
 		DE0BAEF12139E8ED00FD2398 /* Intro_IPad.json in Resources */ = {isa = PBXBuildFile; fileRef = DE0BAEF02139E8ED00FD2398 /* Intro_IPad.json */; };
 /* End PBXBuildFile section */
@@ -656,6 +657,7 @@
 		216082C12136E55E00834890 /* Comp_1_00148.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Comp_1_00148.jpg; sourceTree = "<group>"; };
 		216082C22136E55E00834890 /* Comp_1_00149.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Comp_1_00149.jpg; sourceTree = "<group>"; };
 		2160835D2137093400834890 /* lose.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lose.mp3; sourceTree = "<group>"; };
+		2175E045214173D7008C2F64 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4E145D34D639CC7F8B1C4B36 /* Pods_StressBits.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StressBits.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EBD4857A5C2CF682ED753B9 /* Pods-StressBits.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StressBits.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StressBits/Pods-StressBits.debug.xcconfig"; sourceTree = "<group>"; };
 		B46026D72F65DC7FBA198A5B /* Pods-StressBits.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StressBits.release.xcconfig"; path = "Pods/Target Support Files/Pods-StressBits/Pods-StressBits.release.xcconfig"; sourceTree = "<group>"; };
@@ -695,6 +697,7 @@
 		2152B09A2135EA930002275C /* StressBits */ = {
 			isa = PBXGroup;
 			children = (
+				2175E045214173D7008C2F64 /* GoogleService-Info.plist */,
 				2152B0D42135F94D0002275C /* Animation */,
 				2152B0C32135F5EB0002275C /* Particles */,
 				2152B0C22135F5D10002275C /* Win */,
@@ -1405,6 +1408,7 @@
 				2160830B2136E55E00834890 /* Comp_1_00070.jpg in Resources */,
 				216083112136E55E00834890 /* Comp_1_00076.jpg in Resources */,
 				214CAB9F213DD89F00597114 /* IPad_00130.jpg in Resources */,
+				2175E046214173D7008C2F64 /* GoogleService-Info.plist in Resources */,
 				216083342136E55E00834890 /* Comp_1_00111.jpg in Resources */,
 				216083442136E55E00834890 /* Comp_1_00127.jpg in Resources */,
 				2160833D2136E55E00834890 /* Comp_1_00120.jpg in Resources */,
@@ -1503,12 +1507,22 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-StressBits/Pods-StressBits-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Device.swift/Device_swift.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Device_swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

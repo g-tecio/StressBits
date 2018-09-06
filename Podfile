@@ -6,6 +6,9 @@ target 'StressBits' do
   use_frameworks!
 
   # Pods for StressBits
+pod 'Firebase/Core'
+pod 'Firebase/Performance'
+pod 'Firebase/Analytics'
 pod 'Device.swift'
 pod 'lottie-ios'
 

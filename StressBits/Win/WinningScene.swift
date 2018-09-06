@@ -9,7 +9,7 @@
 
 
 import SpriteKit
-
+import Firebase
 class WinningScene: SKScene {
     
     var background = SKSpriteNode()
@@ -22,6 +22,7 @@ class WinningScene: SKScene {
     override func didMove(to view: SKView) {
         self.scaleMode = SKSceneScaleMode.fill
         //SAD FACE
+        Analytics.logEvent("Win", parameters: nil)
         happyFace = SKSpriteNode(imageNamed: "SmileyFace")
         happyFace.zPosition = 5
 

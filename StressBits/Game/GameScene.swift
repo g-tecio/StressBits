@@ -42,6 +42,7 @@ import GameplayKit
 import AVFoundation
 import AudioToolbox
 import Device_swift
+import Firebase
 struct ColliderType {
     
     static let circle_blue: UInt32 = 1
@@ -1194,10 +1195,12 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     
     func startGame(){
-        hand.removeFromParent()
+        Analytics.logEvent("NewGame", parameters: nil)
+       
         let action = SKAction.rotate(byAngle: -6.3, duration: 90)
         
         timerNeedle.run(action, completion: {
+             Analytics.logEvent("GameOver", parameters: nil)
             self.bgSoundPlayer!.stop()
            
             self.start = false
