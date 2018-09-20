@@ -1200,7 +1200,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         let action = SKAction.rotate(byAngle: -6.3, duration: 90)
         
         timerNeedle.run(action, completion: {
-             Analytics.logEvent("GameOver", parameters: nil)
+            Analytics.logEvent("GameOver", parameters: nil)
             self.bgSoundPlayer!.stop()
            
             self.start = false
