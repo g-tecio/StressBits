@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		200C1CD62154034800B6710F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 200C1CD52154034800B6710F /* GoogleService-Info.plist */; };
 		214CAB1D213DD89F00597114 /* IPad_00000.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 214CAA86213DD89E00597114 /* IPad_00000.jpg */; };
 		214CAB1E213DD89F00597114 /* IPad_00001.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 214CAA87213DD89E00597114 /* IPad_00001.jpg */; };
 		214CAB1F213DD89F00597114 /* IPad_00002.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 214CAA88213DD89E00597114 /* IPad_00002.jpg */; };
@@ -329,12 +328,13 @@
 		216083592136E55E00834890 /* Comp_1_00148.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 216082C12136E55E00834890 /* Comp_1_00148.jpg */; };
 		2160835A2136E55E00834890 /* Comp_1_00149.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 216082C22136E55E00834890 /* Comp_1_00149.jpg */; };
 		2160835E2137093400834890 /* lose.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2160835D2137093400834890 /* lose.mp3 */; };
+		5FBA4F20215ADAB50032F894 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5FBA4F1F215ADAB50032F894 /* GoogleService-Info.plist */; };
+		5FD443B52166A06100A9E4EC /* AddScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD443B42166A06100A9E4EC /* AddScene.swift */; };
 		BC18F87FAAD8B7755C88625B /* Pods_StressBits.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E145D34D639CC7F8B1C4B36 /* Pods_StressBits.framework */; };
 		DE0BAEF12139E8ED00FD2398 /* Intro_IPad.json in Resources */ = {isa = PBXBuildFile; fileRef = DE0BAEF02139E8ED00FD2398 /* Intro_IPad.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		200C1CD52154034800B6710F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		214CAA86213DD89E00597114 /* IPad_00000.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IPad_00000.jpg; path = StressBits/Animation/imagesIpad/IPad_00000.jpg; sourceTree = SOURCE_ROOT; };
 		214CAA87213DD89E00597114 /* IPad_00001.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IPad_00001.jpg; path = StressBits/Animation/imagesIpad/IPad_00001.jpg; sourceTree = SOURCE_ROOT; };
 		214CAA88213DD89E00597114 /* IPad_00002.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IPad_00002.jpg; path = StressBits/Animation/imagesIpad/IPad_00002.jpg; sourceTree = SOURCE_ROOT; };
@@ -659,6 +659,8 @@
 		216082C22136E55E00834890 /* Comp_1_00149.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Comp_1_00149.jpg; sourceTree = "<group>"; };
 		2160835D2137093400834890 /* lose.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lose.mp3; sourceTree = "<group>"; };
 		4E145D34D639CC7F8B1C4B36 /* Pods_StressBits.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StressBits.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FBA4F1F215ADAB50032F894 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5FD443B42166A06100A9E4EC /* AddScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddScene.swift; sourceTree = "<group>"; };
 		8EBD4857A5C2CF682ED753B9 /* Pods-StressBits.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StressBits.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StressBits/Pods-StressBits.debug.xcconfig"; sourceTree = "<group>"; };
 		B46026D72F65DC7FBA198A5B /* Pods-StressBits.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StressBits.release.xcconfig"; path = "Pods/Target Support Files/Pods-StressBits/Pods-StressBits.release.xcconfig"; sourceTree = "<group>"; };
 		DE0BAEF02139E8ED00FD2398 /* Intro_IPad.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Intro_IPad.json; sourceTree = "<group>"; };
@@ -697,19 +699,20 @@
 		2152B09A2135EA930002275C /* StressBits */ = {
 			isa = PBXGroup;
 			children = (
+				5FBA4F1F215ADAB50032F894 /* GoogleService-Info.plist */,
 				2152B0D42135F94D0002275C /* Animation */,
 				2152B0C32135F5EB0002275C /* Particles */,
 				2152B0C22135F5D10002275C /* Win */,
 				2152B0C12135F5C30002275C /* Game Over */,
 				2152B0C02135F5B20002275C /* Game */,
 				2152B0B52135EBA50002275C /* Sounds */,
-				200C1CD52154034800B6710F /* GoogleService-Info.plist */,
 				2152B09B2135EA930002275C /* AppDelegate.swift */,
 				2152B0A32135EA930002275C /* GameViewController.swift */,
 				2152B0A52135EA930002275C /* Main.storyboard */,
 				2152B0A82135EA9A0002275C /* Assets.xcassets */,
 				2152B0AA2135EA9A0002275C /* LaunchScreen.storyboard */,
 				2152B0AD2135EA9A0002275C /* Info.plist */,
+				5FD443B42166A06100A9E4EC /* AddScene.swift */,
 			);
 			path = StressBits;
 			sourceTree = "<group>";
@@ -1408,7 +1411,7 @@
 				2160830B2136E55E00834890 /* Comp_1_00070.jpg in Resources */,
 				216083112136E55E00834890 /* Comp_1_00076.jpg in Resources */,
 				214CAB9F213DD89F00597114 /* IPad_00130.jpg in Resources */,
-				200C1CD62154034800B6710F /* GoogleService-Info.plist in Resources */,
+				5FBA4F20215ADAB50032F894 /* GoogleService-Info.plist in Resources */,
 				216083342136E55E00834890 /* Comp_1_00111.jpg in Resources */,
 				216083442136E55E00834890 /* Comp_1_00127.jpg in Resources */,
 				2160833D2136E55E00834890 /* Comp_1_00120.jpg in Resources */,
@@ -1536,6 +1539,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FD443B52166A06100A9E4EC /* AddScene.swift in Sources */,
 				2152B0A22135EA930002275C /* GameScene.swift in Sources */,
 				2152B0C92135F75D0002275C /* WinningScene.swift in Sources */,
 				2152B0D32135F8DA0002275C /* Board.swift in Sources */,

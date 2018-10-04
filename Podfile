@@ -11,6 +11,7 @@ pod 'Firebase/Performance'
 pod 'Firebase/Analytics'
 pod 'Device.swift'
 pod 'lottie-ios'
-
+pod 'Firebase/AdMob'
+pod 'Google-Mobile-Ads-SDK'
 
 end

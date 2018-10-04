@@ -5,22 +5,29 @@
 //  Created by Alejandro Solis on 8/28/18.
 //  Copyright © 2018 Cartwheel Galaxy. All rights reserved.
 //
-
-
-
 import UIKit
 import SpriteKit
 import GameplayKit
 import Lottie
+import GoogleMobileAds
 
-class GameViewController: UIViewController {
+
+
+class GameViewController: UIViewController,  GADInterstitialDelegate {
+    
     var value:Double = 1.0
     var timerIntro = Timer()
     var intro = LOTAnimationView()
     let deviceType = UIDevice.current.deviceType
     
+    //declare interstitial
+    var interstitial: GADInterstitial!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+      
+        interstitial = createAndLoadInterstitial()
+        
         
         if deviceType == .iPad || deviceType == .iPad2 || deviceType == .iPadMini ||  UIDevice.current.userInterfaceIdiom == .phone {
             print("iPad")
@@ -39,10 +46,9 @@ class GameViewController: UIViewController {
         intro.play{ (finished) in
             
             self.timerIntro = Timer.scheduledTimer(timeInterval: 0.04, target: self, selector: #selector(self.timerClock), userInfo: nil, repeats: true)
-            
-            
+            //show add
+            self.interstitial.present(fromRootViewController: self)
         }
-        
         
         if let view = self.view as! SKView? {
             // Load the SKScene from 'GameScene.sks'
@@ -61,9 +67,17 @@ class GameViewController: UIViewController {
             //view.showsPhysics = true
         }
     }
+    // function that requiere the add
+    func createAndLoadInterstitial() -> GADInterstitial {
+        let interstitial = GADInterstitial(adUnitID: "ca-app-pub-3940256099942544/4411468910")
+        interstitial.delegate = self
+        interstitial.load(GADRequest())
+        return interstitial
+    }
     
-    
-    
+    func interstitialDidDismissScreen(_ ad: GADInterstitial) {
+        interstitial = createAndLoadInterstitial()
+    }
     
     @objc func timerClock() {
         

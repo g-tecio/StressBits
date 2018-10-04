@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>713234020251-eksj56jabnnpmdos8bjebguhm2ccjl79.apps.googleusercontent.com</string>
+	<string>20528864307-27nceskmam0nrskimb6rso1biea0m3qn.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.713234020251-eksj56jabnnpmdos8bjebguhm2ccjl79</string>
+	<string>com.googleusercontent.apps.20528864307-27nceskmam0nrskimb6rso1biea0m3qn</string>
 	<key>API_KEY</key>
-	<string>AIzaSyAXRnKue8bXbcnP6mj4Rjrh7eunYe98CIg</string>
+	<string>AIzaSyCarHDyrTVaVITVk1ClGd-YQh8KYJx8oOw</string>
 	<key>GCM_SENDER_ID</key>
-	<string>713234020251</string>
+	<string>20528864307</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.guadianatechnologygames.StressBits</string>
+	<string>com.guadianatechnologygames.stressbits</string>
 	<key>PROJECT_ID</key>
-	<string>games-stress-bits</string>
+	<string>game-stress-bits-6277b</string>
 	<key>STORAGE_BUCKET</key>
-	<string>games-stress-bits.appspot.com</string>
+	<string>game-stress-bits-6277b.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true></true>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,10 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:713234020251:ios:2976fbee1448cf7c</string>
+	<string>1:20528864307:ios:46b3fc9495903712</string>
 	<key>DATABASE_URL</key>
-	<string>https://games-stress-bits.firebaseio.com</string>
+	<string>https://game-stress-bits-6277b.firebaseio.com</string>
+	<key>ADMOB_APP_ID</key>
+	<string>ca-app-pub-5267056163100832~9578373019</string>
 </dict>
 </plist>
